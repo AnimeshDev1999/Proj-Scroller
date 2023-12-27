@@ -1,0 +1,367 @@
+/* /////////// Global Styles /////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* /////////// General Styles /////////// */
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.svg-path {
+  position: absolute;
+  height: 20rem;
+  border-radius: 100rem;
+  top: 13%;
+  right: -15%;
+}
+
+.img {
+  width: 18rem;
+}
+
+.place-holder {
+  width: 45%;
+}
+
+/* /////////// Section 1 /////////// */
+.fix {
+  width: 45%;
+  height: 100%;
+  position: fixed;
+}
+
+.sec-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background: rgba(89, 0, 175, 1);
+  color: white;
+}
+
+.main-hed {
+  font-size: 3rem;
+}
+
+.sec-hed {
+  font-size: 2.5rem;
+}
+
+.txt-box-1 {
+  position: absolute;
+  top: 30%;
+  right: -5%;
+}
+
+.txt-var-1 {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.txt-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 3rem 4rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-txt {
+  color: #ddd;
+}
+
+.sub-box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sub-box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* /////////// Section 2 /////////// */
+
+.sec-2 {
+  width: 55%;
+  height: 700vh;
+}
+
+.sub-sec {
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+/* /////////// Sub Sections /////////// */
+
+.sub-sec-2 {
+  background: #24186d;
+}
+
+.sub-sec-3 {
+  background: #14095a;
+}
+
+.sub-sec-4 {
+  background: #292929;
+}
+
+.sub-sec-5 {
+  background: #0cb6ef;
+}
+
+.sub-sec-7 {
+  background: #63a260;
+}
+
+.sub-sec-6 {
+  background-image: url(./img/box-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* /////////// Section Images /////////// */
+
+.img-3 {
+  position: absolute;
+  left: 6rem;
+  bottom: -8rem;
+}
+
+.img-4 {
+  position: absolute;
+  right: 6rem;
+  top: -8rem;
+}
+
+.img-5 {
+  position: absolute;
+  left: 6rem;
+  bottom: -8rem;
+}
+
+.img-6 {
+  position: absolute;
+  right: 6rem;
+  top: -8rem;
+}
+
+.img-7 {
+  position: absolute;
+  left: 6rem;
+  bottom: 0rem;
+}
+
+.img-8 {
+  position: absolute;
+  right: 6rem;
+  top: 4rem;
+}
+
+.img-10 {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+
+.img-9 {
+  position: absolute;
+  right: 0rem;
+  bottom: -5rem;
+}
+
+.img-11 {
+  position: absolute;
+  left: 5rem;
+  width: 12rem;
+  top: -8rem;
+}
+
+.img-12 {
+  position: absolute;
+  left: 5rem;
+  width: 12rem;
+  bottom: 0rem;
+}
+
+.img-13 {
+  position: absolute;
+  width: 13rem;
+  top: 1rem;
+}
+
+.img-14 {
+  position: absolute;
+  width: 12rem;
+  bottom: -5rem;
+}
+
+.img-15 {
+  position: absolute;
+  width: 14rem;
+  right: 3rem;
+  bottom: 8rem;
+}
+
+.img-16 {
+  position: absolute;
+  width: 100%;
+}
+
+.img-17 {
+  position: absolute;
+  left: 11rem;
+  width: 18rem;
+  bottom: -3rem;
+}
+
+.img-18 {
+  position: absolute;
+  width: 18rem;
+  right: 11rem;
+  bottom: -3rem;
+}
+
+/* /////////// Media Query /////////// */
+
+@media (max-width: 44em) {
+  .sec-2,
+  .place-holder,
+  svg,
+  .txt-box-1 {
+    display: none;
+  }
+  body {
+    flex-direction: column;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .fix {
+    position: relative;
+    height: 40%;
+    width: 100%;
+  }
+
+  .txt-box-2 {
+    padding: 2rem 1rem;
+  }
+
+  .img-1,
+  .img-2 {
+    width: 10rem;
+    padding-bottom: 14rem;
+  }
+
+  .img-3,
+  .img-5 {
+    width: 10rem;
+    left: 1rem;
+    padding-bottom: 20rem;
+  }
+  .img-4,
+  .img-6,
+  .img-8 {
+    width: 10rem;
+    right: 1rem;
+    padding-top: 8rem;
+  }
+
+  .img-7 {
+    width: 10rem;
+    left: 1rem;
+    padding-bottom: 10rem;
+  }
+
+  .img-9,
+  .img-10,
+  .img-11,
+  .img-12,
+  .img-13,
+  .img-14,
+  .img-15 {
+    width: 12rem;
+    padding-left: 2rem;
+  }
+
+  .img-16 {
+    padding-bottom: 15rem;
+  }
+
+  .img-17,
+  .img-18 {
+    width: 12rem;
+    padding-bottom: 15rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 44em) {
+  .carousel {
+    display: none;
+  }
+}
